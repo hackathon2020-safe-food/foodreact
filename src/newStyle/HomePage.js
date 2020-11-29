@@ -34,9 +34,9 @@ class HomePage extends React.Component {
         let name={'name':record.food_name};
         let json_list={'route':record.routes,'time':record.time}
         let res=await transferValuePost('/goods/'+record.food_name,json_list);
-        if(res.status==='1'){
+        /*if(res.status==='1'){
             this.props.history.push('/show')
-        }
+        }*/
         //TODO
     }
     render() {
